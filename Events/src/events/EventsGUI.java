@@ -39,52 +39,49 @@ public class EventsGUI extends javax.swing.JFrame {
         jTextPane12 = new javax.swing.JTextPane();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        pageHeader = new javax.swing.JLabel();
+        nameL = new javax.swing.JLabel();
+        dateL = new javax.swing.JLabel();
+        locationL = new javax.swing.JLabel();
+        attendingL = new javax.swing.JLabel();
+        fundraiserBTN = new javax.swing.JRadioButton();
+        volunteeringBTN = new javax.swing.JRadioButton();
+        eventTypeL = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        nameTF = new javax.swing.JTextPane();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        dateTF = new javax.swing.JTextPane();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        locationTF = new javax.swing.JTextPane();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        attendingTF = new javax.swing.JTextPane();
+        reoccuringL = new javax.swing.JLabel();
+        volunteeringEDL = new javax.swing.JLabel();
+        volunteeringCatagoryL = new javax.swing.JLabel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        volunteeringEDTF = new javax.swing.JTextPane();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        volunteeringCatagoryTF = new javax.swing.JTextPane();
+        fundraiserInfoBTN = new javax.swing.JLabel();
+        fundraiserCatagoryBTN = new javax.swing.JLabel();
+        volunteeringOnlineL = new javax.swing.JLabel();
+        volunteeringInfoL = new javax.swing.JLabel();
+        createEventBTN = new javax.swing.JButton();
+        searchBTN = new javax.swing.JButton();
+        bookEventBTN = new javax.swing.JButton();
+        exitBTN = new javax.swing.JButton();
+        infoBTN = new javax.swing.JButton();
+        memberBTN = new javax.swing.JButton();
+        donateButton = new javax.swing.JButton();
+        reoccuringTrueBTN = new javax.swing.JRadioButton();
+        reoccuringFalseBTN = new javax.swing.JRadioButton();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        fundraiserInfoTF = new javax.swing.JTextPane();
+        volunteeringOETrueBTN = new javax.swing.JRadioButton();
+        volunteeringOEFalseBTN = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jLabel7 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
-        jScrollPane8 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        jTextPane6 = new javax.swing.JTextPane();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        jTextPane8 = new javax.swing.JTextPane();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        jTextPane9 = new javax.swing.JTextPane();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        jTextPane7 = new javax.swing.JTextPane();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
 
         jRadioButton4.setText("jRadioButton4");
 
@@ -104,78 +101,74 @@ public class EventsGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Engravers MT", 1, 24)); // NOI18N
-        jLabel1.setText("Our events");
+        pageHeader.setFont(new java.awt.Font("Engravers MT", 1, 24)); // NOI18N
+        pageHeader.setText("Our events");
+
+        nameL.setText("NAME");
+
+        dateL.setText("DATE");
+
+        locationL.setText("LOCATION");
+
+        attendingL.setText("ATTENDING");
+
+        fundraiserBTN.setText("FUNDRAISER");
+
+        volunteeringBTN.setText("VOLUNTEERING");
+
+        eventTypeL.setText("EVENT TYPE");
+
+        jScrollPane7.setViewportView(nameTF);
+
+        jScrollPane8.setViewportView(dateTF);
+
+        jScrollPane9.setViewportView(locationTF);
+
+        jScrollPane10.setViewportView(attendingTF);
+
+        reoccuringL.setText("Reoccuring?");
+
+        volunteeringEDL.setText("Event Duration");
+
+        volunteeringCatagoryL.setText("Catagory");
+
+        jScrollPane12.setViewportView(volunteeringEDTF);
+
+        jScrollPane13.setViewportView(volunteeringCatagoryTF);
+
+        fundraiserInfoBTN.setText("FUNDRAISER INFORMATION");
+
+        fundraiserCatagoryBTN.setText("Catagory");
+
+        volunteeringOnlineL.setText("Online Event");
+
+        volunteeringInfoL.setText("VOLUNTEERING INFORMATION");
+
+        createEventBTN.setText("Create Event");
+
+        searchBTN.setText("Search");
+
+        bookEventBTN.setText("Book Event");
+
+        exitBTN.setText("Exit");
+
+        infoBTN.setText("Information");
+
+        memberBTN.setText("Members");
+
+        donateButton.setText("Donate");
+
+        reoccuringTrueBTN.setText("Yes");
+
+        reoccuringFalseBTN.setText("Nah");
+
+        jScrollPane11.setViewportView(fundraiserInfoTF);
+
+        volunteeringOETrueBTN.setText("Yes");
+
+        volunteeringOEFalseBTN.setText("Nah");
 
         jScrollPane1.setViewportView(jTextPane1);
-
-        jLabel2.setText("NAME");
-
-        jLabel3.setText("DATE");
-
-        jLabel4.setText("LOCATION");
-
-        jLabel5.setText("ATTENDING");
-
-        jLabel6.setText("EVENT TYPE");
-
-        jRadioButton1.setText("FUNDRAISER");
-
-        jRadioButton2.setText("VOLUNTEERING");
-
-        jLabel7.setText("EVENT TYPE");
-
-        jScrollPane6.setViewportView(jTextPane2);
-
-        jScrollPane7.setViewportView(jTextPane3);
-
-        jScrollPane8.setViewportView(jTextPane4);
-
-        jScrollPane9.setViewportView(jTextPane5);
-
-        jScrollPane10.setViewportView(jTextPane6);
-
-        jLabel8.setText("Reoccuring?");
-
-        jLabel9.setText("Event Duration");
-
-        jLabel10.setText("Catagory");
-
-        jScrollPane12.setViewportView(jTextPane8);
-
-        jScrollPane13.setViewportView(jTextPane9);
-
-        jLabel11.setText("FUNDRAISER INFORMATION");
-
-        jLabel17.setText("Catagory");
-
-        jLabel18.setText("Online Event");
-
-        jLabel19.setText("VOLUNTEERING INFORMATION");
-
-        jButton1.setText("Create Event");
-
-        jButton2.setText("Search");
-
-        jButton3.setText("Book Event");
-
-        jButton4.setText("Exit");
-
-        jButton5.setText("Information");
-
-        jButton6.setText("Members");
-
-        jButton7.setText("Donate");
-
-        jRadioButton3.setText("jRadioButton3");
-
-        jRadioButton5.setText("jRadioButton5");
-
-        jScrollPane11.setViewportView(jTextPane7);
-
-        jRadioButton6.setText("jRadioButton6");
-
-        jRadioButton7.setText("jRadioButton7");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -185,169 +178,147 @@ public class EventsGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel11)
-                        .addGap(61, 61, 61))
+                        .addComponent(pageHeader)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(infoBTN)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(memberBTN)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(donateButton))
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(dateL)
+                                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                                .addComponent(jScrollPane7))
+                            .addComponent(locationL))
+                        .addGap(67, 67, 67)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(223, 223, 223)
-                                .addComponent(jLabel8))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton5)
+                                .addComponent(reoccuringTrueBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6)
+                                .addComponent(reoccuringFalseBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fundraiserCatagoryBTN)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(createEventBTN)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(searchBTN)
+                        .addGap(18, 18, 18)
+                        .addComponent(bookEventBTN)
+                        .addGap(18, 18, 18)
+                        .addComponent(exitBTN))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(volunteeringBTN)
+                            .addComponent(attendingL)
+                            .addComponent(fundraiserBTN)
+                            .addComponent(eventTypeL))
+                        .addGap(67, 67, 67)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(volunteeringOnlineL)
+                            .addComponent(volunteeringEDL)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addComponent(volunteeringInfoL))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(volunteeringOETrueBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton7))
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                                        .addComponent(jScrollPane7))
-                                    .addComponent(jLabel4))
-                                .addGap(67, 67, 67)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel10)
-                                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton4))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel5)
-                                    .addGap(389, 389, 389))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                                            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.LEADING))
-                                        .addComponent(jLabel7)
-                                        .addComponent(jRadioButton1)
-                                        .addComponent(jRadioButton2)
-                                        .addComponent(jLabel6))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(67, 67, 67)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel17)
-                                                .addComponent(jLabel18)
-                                                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jLabel9)
-                                                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(73, 73, 73)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel19)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(jRadioButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(jRadioButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(volunteeringOEFalseBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+                            .addComponent(volunteeringCatagoryL)
+                            .addComponent(jScrollPane12)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(nameL)
+                        .addGap(223, 223, 223)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fundraiserInfoBTN)
+                            .addComponent(reoccuringL))))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
+                            .addComponent(pageHeader)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButton5)
-                                .addComponent(jButton6)
-                                .addComponent(jButton7)))
+                                .addComponent(infoBTN)
+                                .addComponent(memberBTN)
+                                .addComponent(donateButton)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel8)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addComponent(jLabel11)
-                                .addGap(29, 29, 29)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                        .addComponent(fundraiserInfoBTN)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nameL)
+                            .addComponent(reoccuringL))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel4))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jRadioButton3)
-                                            .addComponent(jRadioButton5))
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel5)
-                                        .addGap(9, 9, 9)
-                                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel6))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(50, 50, 50)
-                                        .addComponent(jLabel19)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel18)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jRadioButton6)
-                                            .addComponent(jRadioButton7))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(reoccuringTrueBTN)
+                                    .addComponent(reoccuringFalseBTN))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(fundraiserCatagoryBTN)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(dateL)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(locationL)
+                                .addGap(0, 3, Short.MAX_VALUE)
+                                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(9, 9, 9)
+                                .addComponent(attendingL)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel17)))
-                        .addGap(7, 7, 7)
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel9))
+                                .addComponent(volunteeringInfoL)))
+                        .addGap(18, 18, 18)
+                        .addComponent(volunteeringOnlineL)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 4, Short.MAX_VALUE)
-                        .addComponent(jRadioButton2)
-                        .addGap(15, 15, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4))))
+                            .addComponent(volunteeringOETrueBTN)
+                            .addComponent(volunteeringOEFalseBTN))
+                        .addGap(16, 16, 16)
+                        .addComponent(volunteeringCatagoryL)
+                        .addGap(0, 0, 0)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(eventTypeL)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(volunteeringEDL)
+                            .addComponent(fundraiserBTN))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(volunteeringBTN))
+                        .addGap(65, 65, 65)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(searchBTN)
+                            .addComponent(bookEventBTN)
+                            .addComponent(exitBTN)
+                            .addComponent(createEventBTN)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
 
@@ -378,40 +349,31 @@ public class EventsGUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new EventsGUI().setVisible(true));
     }
-
+    
+    public void nameTF(){
+        
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel attendingL;
+    private javax.swing.JTextPane attendingTF;
+    private javax.swing.JButton bookEventBTN;
+    private javax.swing.JButton createEventBTN;
+    private javax.swing.JLabel dateL;
+    private javax.swing.JTextPane dateTF;
+    private javax.swing.JButton donateButton;
+    private javax.swing.JLabel eventTypeL;
+    private javax.swing.JButton exitBTN;
+    private javax.swing.JRadioButton fundraiserBTN;
+    private javax.swing.JLabel fundraiserCatagoryBTN;
+    private javax.swing.JLabel fundraiserInfoBTN;
+    private javax.swing.JTextPane fundraiserInfoTF;
+    private javax.swing.JButton infoBTN;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
@@ -420,7 +382,6 @@ public class EventsGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
-    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
@@ -429,13 +390,24 @@ public class EventsGUI extends javax.swing.JFrame {
     private javax.swing.JTextPane jTextPane10;
     private javax.swing.JTextPane jTextPane11;
     private javax.swing.JTextPane jTextPane12;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane5;
-    private javax.swing.JTextPane jTextPane6;
-    private javax.swing.JTextPane jTextPane7;
-    private javax.swing.JTextPane jTextPane8;
-    private javax.swing.JTextPane jTextPane9;
+    private javax.swing.JLabel locationL;
+    private javax.swing.JTextPane locationTF;
+    private javax.swing.JButton memberBTN;
+    private javax.swing.JLabel nameL;
+    private javax.swing.JTextPane nameTF;
+    private javax.swing.JLabel pageHeader;
+    private javax.swing.JRadioButton reoccuringFalseBTN;
+    private javax.swing.JLabel reoccuringL;
+    private javax.swing.JRadioButton reoccuringTrueBTN;
+    private javax.swing.JButton searchBTN;
+    private javax.swing.JRadioButton volunteeringBTN;
+    private javax.swing.JLabel volunteeringCatagoryL;
+    private javax.swing.JTextPane volunteeringCatagoryTF;
+    private javax.swing.JLabel volunteeringEDL;
+    private javax.swing.JTextPane volunteeringEDTF;
+    private javax.swing.JLabel volunteeringInfoL;
+    private javax.swing.JRadioButton volunteeringOEFalseBTN;
+    private javax.swing.JRadioButton volunteeringOETrueBTN;
+    private javax.swing.JLabel volunteeringOnlineL;
     // End of variables declaration//GEN-END:variables
 }

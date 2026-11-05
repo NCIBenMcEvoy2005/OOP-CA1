@@ -12,7 +12,7 @@ public class Events {
     protected String name;
     protected String date;
     protected String location;
-    protected int attendiing;
+    protected int attending;
 
     public Events() {
     }
@@ -21,7 +21,7 @@ public class Events {
         this.name = name;
         this.date = date;
         this.location = location;
-        this.attendiing = attendiing;
+        this.attending = attendiing;
     }
 
     public void setName(String name) {
@@ -36,8 +36,8 @@ public class Events {
         this.location = location;
     }
 
-    public void setAttendiing(int attendiing) {
-        this.attendiing = attendiing;
+    public void setAttending(int attending) {
+        this.attending = attending;
     }
 
     public String getName() {
@@ -52,13 +52,13 @@ public class Events {
         return location;
     }
 
-    public int getAttendiing() {
-        return attendiing;
+    public int getAttending() {
+        return attending;
     }
 
     @Override
     public String toString() {
-        return "Events{" + "name=" + name + ", date=" + date + ", location=" + location + ", attendiing=" + attendiing + '}';
+        return "Events{" + "name=" + name + ", date=" + date + ", location=" + location + ", attendiing=" + attending + '}';
     }
     
     
