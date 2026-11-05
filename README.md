@@ -1,1 +1,2 @@
-# OOP-CA1
+# Events App
+By Ben McEvoy (x25331971)
