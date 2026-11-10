@@ -46,11 +46,4 @@ public class VolunteeringEvent extends Events{
     public String getCatagory() {
         return catagory;
     }
-
-    @Override
-    public String toString() {
-        return super.toString()+"\nVolunteeringEvent{" + "reoccuring=" + reoccuring + ", eventLength=" + eventLength + ", catagory=" + catagory + '}';
-    }
-    
-    
 }

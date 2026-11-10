@@ -45,11 +45,5 @@ public class Fundraisers extends Events{
 
     public String getCatagory() {
         return catagory;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString()+"\nFundraisers{" + "online=" + online + ", donated=" + donated + ", catagory=" + catagory + '}';
-    }
-    
+    }    
 }

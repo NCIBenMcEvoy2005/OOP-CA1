@@ -73,7 +73,7 @@ public class EventsGUI extends javax.swing.JFrame {
         exitBTN = new javax.swing.JButton();
         infoBTN = new javax.swing.JButton();
         memberBTN = new javax.swing.JButton();
-        donateButton = new javax.swing.JButton();
+        donateBTN = new javax.swing.JButton();
         reoccuringTrueBTN = new javax.swing.JRadioButton();
         reoccuringFalseBTN = new javax.swing.JRadioButton();
         jScrollPane11 = new javax.swing.JScrollPane();
@@ -156,7 +156,7 @@ public class EventsGUI extends javax.swing.JFrame {
 
         memberBTN.setText("Members");
 
-        donateButton.setText("Donate");
+        donateBTN.setText("Donate");
 
         reoccuringTrueBTN.setText("Yes");
 
@@ -184,7 +184,7 @@ public class EventsGUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(memberBTN)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(donateButton))
+                        .addComponent(donateBTN))
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
@@ -253,7 +253,7 @@ public class EventsGUI extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(infoBTN)
                                 .addComponent(memberBTN)
-                                .addComponent(donateButton)))
+                                .addComponent(donateBTN)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
@@ -350,8 +350,16 @@ public class EventsGUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new EventsGUI().setVisible(true));
     }
     
-    public void nameTF(){
-        
+    public void infoBTN(){
+        // When Button Pressed, Load Information Class GUI
+    }
+    
+    public void memberBTN(){
+        // When Button Pressed, Load Member Class GUI
+    }
+    
+    public void donateBTN(){
+        // When Button Pressed, Load Donate Class GUI
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -361,7 +369,7 @@ public class EventsGUI extends javax.swing.JFrame {
     private javax.swing.JButton createEventBTN;
     private javax.swing.JLabel dateL;
     private javax.swing.JTextPane dateTF;
-    private javax.swing.JButton donateButton;
+    private javax.swing.JButton donateBTN;
     private javax.swing.JLabel eventTypeL;
     private javax.swing.JButton exitBTN;
     private javax.swing.JRadioButton fundraiserBTN;

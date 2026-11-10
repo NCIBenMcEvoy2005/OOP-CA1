@@ -93,7 +93,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="memberBTN" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="donateButton" min="-2" max="-2" attributes="0"/>
+                      <Component id="donateBTN" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane9" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
                   <Component id="jSeparator1" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
@@ -179,7 +179,7 @@
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="infoBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="memberBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="donateButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="donateBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -444,7 +444,7 @@
         <Property name="text" type="java.lang.String" value="Members"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="donateButton">
+    <Component class="javax.swing.JButton" name="donateBTN">
       <Properties>
         <Property name="text" type="java.lang.String" value="Donate"/>
       </Properties>
