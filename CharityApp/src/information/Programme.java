@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package charity;
+package information;
 
 /**
  *
  * @author annam
  */
-public class Programme extends Charity{
+public class Programme extends Organisation{
     //data members
     protected int programmeID;
     
@@ -29,5 +29,10 @@ public class Programme extends Charity{
     //set emthods
     
     //get methods
+    
+    //my other methods
+    public String getProgrammeDetails(){
+        return "Programme ID: " +programmeID+ "\nCharity: " +charityName+ "\nOur Mission: " +description+ "\n Year Founded: " +founded+ "\nEmail: " +email+ "\nPhone No: " +phone;
+    }
     
 }
