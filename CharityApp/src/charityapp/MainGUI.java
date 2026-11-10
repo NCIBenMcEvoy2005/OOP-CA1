@@ -4,6 +4,9 @@
  */
 package charityapp;
 
+import events.EventsGUI;
+import members.RegisterGUI;
+
 /*
  * MainGUI.java
  *
@@ -50,9 +53,11 @@ public class MainGUI extends javax.swing.JFrame {
 
         eventsBTN.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         eventsBTN.setText("Events");
+        eventsBTN.addActionListener(this::eventsBTNActionPerformed);
 
         membersBTN.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         membersBTN.setText("Members");
+        membersBTN.addActionListener(this::membersBTNActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,10 +67,9 @@ public class MainGUI extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(membersBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(eventsBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(informationBTN, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(titleLBL, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(eventsBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(informationBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(titleLBL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -84,6 +88,16 @@ public class MainGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void membersBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_membersBTNActionPerformed
+        RegisterGUI registerGUI = new RegisterGUI();
+        registerGUI.setVisible(true);
+    }//GEN-LAST:event_membersBTNActionPerformed
+
+    private void eventsBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eventsBTNActionPerformed
+        EventsGUI eventsGUI = new EventsGUI();
+        eventsGUI.setVisible(true);
+    }//GEN-LAST:event_eventsBTNActionPerformed
 
     /**
      * @param args the command line arguments
