@@ -15,6 +15,8 @@ public class CharityApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        CharityGUI infoGUI = new CharityGUI();
+        infoGUI.setVisible(true);
     }
     
 }
