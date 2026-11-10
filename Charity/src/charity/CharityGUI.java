@@ -17,6 +17,14 @@ public class CharityGUI extends javax.swing.JFrame {
      */
     public CharityGUI() {
         initComponents();
+        nameLbl.setVisible(false);
+        foundedLbl.setVisible(false);
+        emailLbl.setVisible(false);
+        phoneLbl.setVisible(false);
+        programmeIDLbl.setVisible(false);
+        summaryLbl.setVisible(false);
+        detailsTA.setVisible(false);
+        
     }
 
     /**
@@ -225,6 +233,7 @@ public class CharityGUI extends javax.swing.JFrame {
 
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
         // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_exitBtnActionPerformed
 
     private void okayBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okayBtnActionPerformed
