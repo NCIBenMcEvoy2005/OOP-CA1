@@ -43,19 +43,20 @@ public class MainGUI extends javax.swing.JFrame {
         membersBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Charity Management App");
 
-        titleLBL.setFont(new java.awt.Font("Geneva", 1, 36)); // NOI18N
+        titleLBL.setFont(new java.awt.Font("Hubballi", 1, 36)); // NOI18N
+        titleLBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titleLBL.setText("Charity Management App");
 
-        informationBTN.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        informationBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
         informationBTN.setText("Information");
-        informationBTN.setEnabled(false);
 
-        eventsBTN.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        eventsBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
         eventsBTN.setText("Events");
         eventsBTN.addActionListener(this::eventsBTNActionPerformed);
 
-        membersBTN.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        membersBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
         membersBTN.setText("Members");
         membersBTN.addActionListener(this::membersBTNActionPerformed);
 
@@ -65,22 +66,25 @@ public class MainGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(54, 54, 54)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(membersBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(eventsBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(eventsBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(informationBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(titleLBL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(49, Short.MAX_VALUE))
+                    .addComponent(membersBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(titleLBL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(35, 35, 35)))
+                .addGap(50, 50, 50))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(38, 38, 38)
                 .addComponent(titleLBL)
-                .addGap(29, 29, 29)
-                .addComponent(informationBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
+                .addComponent(informationBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(eventsBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
+                .addComponent(eventsBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(membersBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
                 .addGap(36, 36, 36))

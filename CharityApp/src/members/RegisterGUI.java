@@ -49,30 +49,39 @@ public class RegisterGUI extends javax.swing.JFrame {
         backBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Register Member");
 
-        titleLBL.setFont(new java.awt.Font("Geneva", 1, 24)); // NOI18N
-        titleLBL.setText("Our members");
+        titleLBL.setFont(new java.awt.Font("Hubballi", 1, 36)); // NOI18N
+        titleLBL.setText("Add member");
 
-        nameLBL.setText("NAME");
+        nameLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        nameLBL.setText("NAME:");
 
-        emailLBL.setText("EMAIL");
+        emailLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        emailLBL.setText("EMAIL:");
 
         emailTF.addActionListener(this::emailTFActionPerformed);
 
-        donationLBL.setText("DONATION");
+        donationLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        donationLBL.setText("DONATION:");
 
-        skillsLBL.setText("SKILLS");
+        skillsLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        skillsLBL.setText("SKILLS:");
 
         skillsTF.addActionListener(this::skillsTFActionPerformed);
 
+        addMemberBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         addMemberBTN.setText("Add Member");
 
+        addVolunteerBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         addVolunteerBTN.setText("Add Volunteer");
         addVolunteerBTN.addActionListener(this::addVolunteerBTNActionPerformed);
 
-        viewRecordsBTN.setText("VIEW RECORDS");
+        viewRecordsBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        viewRecordsBTN.setText("🔍 VIEW RECORDS ");
         viewRecordsBTN.addActionListener(this::viewRecordsBTNActionPerformed);
 
+        backBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         backBTN.setText("< Back");
         backBTN.addActionListener(this::backBTNActionPerformed);
 
@@ -88,7 +97,7 @@ public class RegisterGUI extends javax.swing.JFrame {
                         .addComponent(backBTN))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(nameLBL)
                                 .addComponent(nameTF)
                                 .addComponent(emailLBL)
@@ -96,13 +105,13 @@ public class RegisterGUI extends javax.swing.JFrame {
                                 .addComponent(donationLBL)
                                 .addComponent(donationTF)
                                 .addComponent(skillsLBL)
-                                .addComponent(skillsTF, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE))
+                                .addComponent(skillsTF))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(addMemberBTN)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(addVolunteerBTN))
                             .addComponent(titleLBL))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addGap(26, 26, 26)
                         .addComponent(viewRecordsBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -114,7 +123,7 @@ public class RegisterGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(nameLBL)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -129,14 +138,14 @@ public class RegisterGUI extends javax.swing.JFrame {
                         .addComponent(skillsLBL)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(skillsTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(addMemberBTN)
                             .addComponent(addVolunteerBTN)))
                     .addComponent(viewRecordsBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(83, 83, 83)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addComponent(backBTN)
-                .addContainerGap())
+                .addGap(14, 14, 14))
         );
 
         pack();
