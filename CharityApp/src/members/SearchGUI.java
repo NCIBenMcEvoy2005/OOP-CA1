@@ -47,26 +47,35 @@ public class SearchGUI extends javax.swing.JFrame {
         displayTA = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Members List");
 
-        titleLBL.setFont(new java.awt.Font("Geneva", 1, 24)); // NOI18N
+        titleLBL.setFont(new java.awt.Font("Hubballi", 0, 36)); // NOI18N
+        titleLBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titleLBL.setText("Members List");
 
+        nameLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         nameLBL.setText("NAME:");
 
+        searchBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         searchBTN.setText("Search");
         searchBTN.addActionListener(this::searchBTNActionPerformed);
 
+        deleteBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         deleteBTN.setText("Delete");
         deleteBTN.addActionListener(this::deleteBTNActionPerformed);
 
+        displayAllBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         displayAllBTN.setText("Display All");
 
+        backBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         backBTN.setText("< Back");
         backBTN.addActionListener(this::backBTNActionPerformed);
 
+        saveBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         saveBTN.setText("Save");
         saveBTN.addActionListener(this::saveBTNActionPerformed);
 
+        loadBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
         loadBTN.setText("Load");
 
         displayTA.setColumns(20);
@@ -80,11 +89,8 @@ public class SearchGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(158, 158, 158)
-                        .addComponent(titleLBL))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(backBTN)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -94,15 +100,18 @@ public class SearchGUI extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(nameLBL)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(nameTF, javax.swing.GroupLayout.DEFAULT_SIZE, 314, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(searchBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(deleteBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(displayAllBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jScrollPane1))))
-                .addContainerGap(18, Short.MAX_VALUE))
+                            .addComponent(jScrollPane1)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(titleLBL)))
+                .addGap(8, 8, 8))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,13 +128,13 @@ public class SearchGUI extends javax.swing.JFrame {
                     .addComponent(deleteBTN)
                     .addComponent(displayAllBTN))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(backBTN)
                     .addComponent(loadBTN)
                     .addComponent(saveBTN))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
