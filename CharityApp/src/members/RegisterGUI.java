@@ -71,6 +71,7 @@ public class RegisterGUI extends javax.swing.JFrame {
         addVolunteerBTN.addActionListener(this::addVolunteerBTNActionPerformed);
 
         viewRecordsBTN.setText("VIEW RECORDS");
+        viewRecordsBTN.addActionListener(this::viewRecordsBTNActionPerformed);
 
         backBTN.setText("< Back");
         backBTN.addActionListener(this::backBTNActionPerformed);
@@ -154,8 +155,13 @@ public class RegisterGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_addVolunteerBTNActionPerformed
 
     private void backBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBTNActionPerformed
-        // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_backBTNActionPerformed
+
+    private void viewRecordsBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewRecordsBTNActionPerformed
+        SearchGUI searchGUI = new SearchGUI();
+        searchGUI.setVisible(true);
+    }//GEN-LAST:event_viewRecordsBTNActionPerformed
 
     /**
      * @param args the command line arguments

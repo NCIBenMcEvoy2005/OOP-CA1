@@ -140,7 +140,7 @@ public class SearchGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteBTNActionPerformed
 
     private void backBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBTNActionPerformed
-        // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_backBTNActionPerformed
 
     private void saveBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBTNActionPerformed
