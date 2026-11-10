@@ -31,4 +31,10 @@ public class FoodSupport extends Programme{
     //get methods
     
     //my other methods
+    public String getDetails(){
+        return "Locations supported: " +areaSupported+ "\n Meals distributed weekly: " +weeklyMeals+ "\nOur centres: " +location;
+    }
+    
+    
 }
+
