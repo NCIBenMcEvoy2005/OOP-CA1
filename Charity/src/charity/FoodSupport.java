@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package charity;
+package information;
 
 /**
  *
@@ -31,10 +31,9 @@ public class FoodSupport extends Programme{
     //get methods
     
     //my other methods
-    public String getDetails(){
+    public String getFoodDetails(){
         return "Locations supported: " +areaSupported+ "\n Meals distributed weekly: " +weeklyMeals+ "\nOur centres: " +location;
     }
     
     
 }
-
