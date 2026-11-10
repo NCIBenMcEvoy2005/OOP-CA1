@@ -11,7 +11,7 @@ package charity;
 public class EducationSupport extends Programme{
     //data members
     private int schoolSupported;
-    private int schoolRegistered;
+    private String schoolRegistered;
     private int studentsSupported;
     private String studentName;
     private String subjects;
@@ -20,8 +20,9 @@ public class EducationSupport extends Programme{
 
     public EducationSupport() {
     }
-
-    public EducationSupport(int schoolSupported, int schoolRegistered, int studentsSupported, String studentName, String subjects) {
+    
+    //will probably get rid of student parts. realised its a little unnecessary
+    public EducationSupport(int schoolSupported, String schoolRegistered, int studentsSupported, String studentName, String subjects) {
         this.schoolSupported = schoolSupported;
         this.schoolRegistered = schoolRegistered;
         this.studentsSupported = studentsSupported;
@@ -29,7 +30,7 @@ public class EducationSupport extends Programme{
         this.subjects = subjects;
     }
 
-    public EducationSupport(int schoolSupported, int schoolRegistered, int studentsSupported, String studentName, String subjects, int programmeID, String charityName, String description, int founded, String email, String phone) {
+    public EducationSupport(int schoolSupported, String schoolRegistered, int studentsSupported, String studentName, String subjects, int programmeID, String charityName, String description, int founded, String email, String phone) {
         super(programmeID, charityName, description, founded, email, phone);
         this.schoolSupported = schoolSupported;
         this.schoolRegistered = schoolRegistered;
@@ -42,6 +43,10 @@ public class EducationSupport extends Programme{
     
     //get methods
     
+    //my other methods
+    public String getDetails(){
+        return "Schools Supported: " +schoolSupported+ "\nRegistered schools: " +schoolRegistered+ "\nSubjects we cover: " +subjects;
+    }
     
     
 }
