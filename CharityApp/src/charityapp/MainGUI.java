@@ -46,19 +46,19 @@ public class MainGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Charity Management App");
 
-        titleLBL.setFont(new java.awt.Font("Hubballi", 1, 36)); // NOI18N
+        titleLBL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         titleLBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titleLBL.setText("Charity Management App");
 
-        informationBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
+        informationBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         informationBTN.setText("Information");
         informationBTN.addActionListener(this::informationBTNActionPerformed);
 
-        eventsBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
+        eventsBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         eventsBTN.setText("Events");
         eventsBTN.addActionListener(this::eventsBTNActionPerformed);
 
-        membersBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
+        membersBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         membersBTN.setText("Members");
         membersBTN.addActionListener(this::membersBTNActionPerformed);
 

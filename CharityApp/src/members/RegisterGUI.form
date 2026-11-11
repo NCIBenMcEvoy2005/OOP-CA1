@@ -100,7 +100,7 @@
     <Component class="javax.swing.JLabel" name="titleLBL">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="36" style="1"/>
+          <Font name="Segoe UI" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Add member"/>
       </Properties>
@@ -108,7 +108,7 @@
     <Component class="javax.swing.JLabel" name="nameLBL">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="NAME:"/>
       </Properties>
@@ -118,7 +118,7 @@
     <Component class="javax.swing.JLabel" name="emailLBL">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="EMAIL:"/>
       </Properties>
@@ -131,7 +131,7 @@
     <Component class="javax.swing.JLabel" name="donationLBL">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="DONATION:"/>
       </Properties>
@@ -141,7 +141,7 @@
     <Component class="javax.swing.JLabel" name="skillsLBL">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SKILLS:"/>
       </Properties>
@@ -154,7 +154,7 @@
     <Component class="javax.swing.JButton" name="addMemberBTN">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Add Member"/>
       </Properties>
@@ -162,7 +162,7 @@
     <Component class="javax.swing.JButton" name="addVolunteerBTN">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Add Volunteer"/>
       </Properties>
@@ -173,7 +173,7 @@
     <Component class="javax.swing.JButton" name="viewRecordsBTN">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="\ud83d\udd0d VIEW RECORDS " containsInvalidXMLChars="true"/>
       </Properties>
@@ -184,7 +184,7 @@
     <Component class="javax.swing.JButton" name="backBTN">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Hubballi" size="18" style="0"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&lt; Back"/>
       </Properties>

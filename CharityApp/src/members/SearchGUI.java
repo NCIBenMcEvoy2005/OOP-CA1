@@ -49,33 +49,33 @@ public class SearchGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Members List");
 
-        titleLBL.setFont(new java.awt.Font("Hubballi", 0, 36)); // NOI18N
+        titleLBL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         titleLBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titleLBL.setText("Members List");
 
-        nameLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        nameLBL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         nameLBL.setText("NAME:");
 
-        searchBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        searchBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         searchBTN.setText("Search");
         searchBTN.addActionListener(this::searchBTNActionPerformed);
 
-        deleteBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        deleteBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         deleteBTN.setText("Delete");
         deleteBTN.addActionListener(this::deleteBTNActionPerformed);
 
-        displayAllBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        displayAllBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         displayAllBTN.setText("Display All");
 
-        backBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        backBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         backBTN.setText("< Back");
         backBTN.addActionListener(this::backBTNActionPerformed);
 
-        saveBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        saveBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         saveBTN.setText("Save");
         saveBTN.addActionListener(this::saveBTNActionPerformed);
 
-        loadBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        loadBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         loadBTN.setText("Load");
 
         displayTA.setColumns(20);
