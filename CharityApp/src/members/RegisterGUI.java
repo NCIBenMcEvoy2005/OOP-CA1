@@ -51,37 +51,37 @@ public class RegisterGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Register Member");
 
-        titleLBL.setFont(new java.awt.Font("Hubballi", 1, 36)); // NOI18N
+        titleLBL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         titleLBL.setText("Add member");
 
-        nameLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        nameLBL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         nameLBL.setText("NAME:");
 
-        emailLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        emailLBL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         emailLBL.setText("EMAIL:");
 
         emailTF.addActionListener(this::emailTFActionPerformed);
 
-        donationLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        donationLBL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         donationLBL.setText("DONATION:");
 
-        skillsLBL.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        skillsLBL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         skillsLBL.setText("SKILLS:");
 
         skillsTF.addActionListener(this::skillsTFActionPerformed);
 
-        addMemberBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        addMemberBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         addMemberBTN.setText("Add Member");
 
-        addVolunteerBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        addVolunteerBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         addVolunteerBTN.setText("Add Volunteer");
         addVolunteerBTN.addActionListener(this::addVolunteerBTNActionPerformed);
 
-        viewRecordsBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        viewRecordsBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         viewRecordsBTN.setText("🔍 VIEW RECORDS ");
         viewRecordsBTN.addActionListener(this::viewRecordsBTNActionPerformed);
 
-        backBTN.setFont(new java.awt.Font("Hubballi", 0, 18)); // NOI18N
+        backBTN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         backBTN.setText("< Back");
         backBTN.addActionListener(this::backBTNActionPerformed);
 
