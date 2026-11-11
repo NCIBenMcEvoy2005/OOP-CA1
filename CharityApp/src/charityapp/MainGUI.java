@@ -5,6 +5,7 @@
 package charityapp;
 
 import events.EventsGUI;
+import information.InformationGUI;
 import members.RegisterGUI;
 
 /*
@@ -51,6 +52,7 @@ public class MainGUI extends javax.swing.JFrame {
 
         informationBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
         informationBTN.setText("Information");
+        informationBTN.addActionListener(this::informationBTNActionPerformed);
 
         eventsBTN.setFont(new java.awt.Font("Hubballi", 0, 24)); // NOI18N
         eventsBTN.setText("Events");
@@ -102,6 +104,11 @@ public class MainGUI extends javax.swing.JFrame {
         EventsGUI eventsGUI = new EventsGUI();
         eventsGUI.setVisible(true);
     }//GEN-LAST:event_eventsBTNActionPerformed
+
+    private void informationBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_informationBTNActionPerformed
+        InformationGUI informationGUI = new InformationGUI();
+        informationGUI.setVisible(true);
+    }//GEN-LAST:event_informationBTNActionPerformed
 
     /**
      * @param args the command line arguments
