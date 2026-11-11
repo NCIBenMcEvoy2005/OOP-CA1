@@ -55,11 +55,4 @@ public class Events {
     public int getAttending() {
         return attending;
     }
-
-    @Override
-    public String toString() {
-        return "Events{" + "name=" + name + ", date=" + date + ", location=" + location + ", attendiing=" + attending + '}';
-    }
-    
-    
 }
