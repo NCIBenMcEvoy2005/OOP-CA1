@@ -87,17 +87,20 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="pageHeader" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Component id="createEventBTN" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="infoBTN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="memberBTN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="searchBTN" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="bookEventBTN" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="PrintTicketBTN" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="homeBTN" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane9" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
                   <Component id="jSeparator1" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                               <Component id="dateL" min="-2" max="-2" attributes="0"/>
@@ -108,61 +111,56 @@
                       </Group>
                       <EmptySpace min="67" pref="67" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="reoccuringTrueBTN" min="-2" pref="91" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="reoccuringFalseBTN" min="-2" pref="91" max="-2" attributes="0"/>
-                          </Group>
                           <Component id="jScrollPane11" min="-2" pref="222" max="-2" attributes="0"/>
                           <Component id="fundraiserCatagoryBTN" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="fundraiserInfoBTN" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="reoccuringTrueBTN" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="reoccuringFalseBTN" min="-2" pref="91" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Component id="createEventBTN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="searchBTN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="bookEventBTN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="exitBTN" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jScrollPane10" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
-                          <Component id="volunteeringBTN" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="attendingL" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="fundraiserBTN" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="eventTypeL" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="fundraiserBTN" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="volunteeringOnlineL" min="-2" max="-2" attributes="0"/>
-                          <Component id="volunteeringEDL" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="volunteeringOnlineL" min="-2" max="-2" attributes="0"/>
+                              <Component id="volunteeringEDL" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="volunteeringOETrueBTN" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="volunteeringOEFalseBTN" min="-2" pref="91" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane13" alignment="0" pref="232" max="32767" attributes="0"/>
+                              <Component id="volunteeringCatagoryL" min="-2" max="-2" attributes="0"/>
+                              <Component id="jScrollPane12" alignment="0" max="32767" attributes="0"/>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                               <Component id="volunteeringInfoL" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="volunteeringOETrueBTN" min="-2" pref="91" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="volunteeringOEFalseBTN" min="-2" pref="91" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jScrollPane13" alignment="0" pref="232" max="32767" attributes="0"/>
-                          <Component id="volunteeringCatagoryL" min="-2" max="-2" attributes="0"/>
-                          <Component id="jScrollPane12" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="nameL" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="fundraiserInfoBTN" min="-2" max="-2" attributes="0"/>
-                          <Component id="reoccuringL" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="reoccuringL" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="pageHeader" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="volunteeringBTN" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="386" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -170,93 +168,93 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="pageHeader" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="infoBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="memberBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="homeBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
+              <Component id="pageHeader" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace pref="13" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="fundraiserInfoBTN" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="nameL" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="reoccuringL" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="reoccuringTrueBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="reoccuringFalseBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="fundraiserCatagoryBTN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane11" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="dateL" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="18" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="locationL" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
-                      <Component id="jScrollPane9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                      <Component id="attendingL" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane10" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="reoccuringTrueBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="reoccuringFalseBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="fundraiserCatagoryBTN" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="dateL" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="locationL" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jScrollPane9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Component id="attendingL" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane10" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="volunteeringInfoL" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="volunteeringOnlineL" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="eventTypeL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="volunteeringOETrueBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="volunteeringOEFalseBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="volunteeringInfoL" min="-2" max="-2" attributes="0"/>
+                      <Component id="fundraiserBTN" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="volunteeringOnlineL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="volunteeringOETrueBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="volunteeringOEFalseBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="volunteeringBTN" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="volunteeringCatagoryL" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="eventTypeL" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane13" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="jScrollPane13" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="volunteeringEDL" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="fundraiserBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="volunteeringEDL" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jScrollPane12" min="-2" max="-2" attributes="0"/>
-                  <Component id="volunteeringBTN" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="jScrollPane12" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="searchBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="bookEventBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="exitBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="createEventBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="PrintTicketBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="homeBTN" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
+          <Component id="jScrollPane1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -411,44 +409,29 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Create Event"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createEventBTNActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="searchBTN">
       <Properties>
         <Property name="text" type="java.lang.String" value="Search"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchBTNActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bookEventBTN">
       <Properties>
         <Property name="text" type="java.lang.String" value="Book Event"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="exitBTN">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Exit"/>
-      </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitBTNActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="infoBTN">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Information"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="infoBTNActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="memberBTN">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Members"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="memberBTNActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookEventBTNActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="homeBTN">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Home"/>
+        <Property name="text" type="java.lang.String" value="Back"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="homeBTNActionPerformed"/>
@@ -485,5 +468,24 @@
         <Property name="text" type="java.lang.String" value="Nah"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JButton" name="PrintTicketBTN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Print Ticket"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PrintTicketBTNActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="ResultsTP">
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
