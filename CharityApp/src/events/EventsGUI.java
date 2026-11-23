@@ -17,6 +17,21 @@ public class EventsGUI extends javax.swing.JFrame {
      */
     public EventsGUI() {
         initComponents();
+        fundraiserInfoLBL.setVisible(false);
+        onlineEventLBL.setVisible(false);
+        onlineEventTrueBTN.setVisible(false);
+        onlineEventFalseBTN.setVisible(false);
+        fundraiserCatagoryBTN.setVisible(false);
+        fundraiserInfoTF.setVisible(false);
+        
+        volunteeringInfoLBL.setVisible(false);
+        volunteeringReoccuringLBL.setVisible(false);
+        volunteeringReoccuringTrueBTN.setVisible(false);
+        volunteeringReoccuringFalseBTN.setVisible(false);
+        volunteeringCatagoryLBL.setVisible(false);
+        volunteeringCatagoryTF.setVisible(false);
+        volunteeringEDL.setVisible(false);
+        volunteeringEDTF.setVisible(false);
     }
 
     /**
@@ -39,6 +54,9 @@ public class EventsGUI extends javax.swing.JFrame {
         jTextPane12 = new javax.swing.JTextPane();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        EventType = new javax.swing.ButtonGroup();
+        reoccuring = new javax.swing.ButtonGroup();
+        OnlineEvent = new javax.swing.ButtonGroup();
         pageHeader = new javax.swing.JLabel();
         nameL = new javax.swing.JLabel();
         dateL = new javax.swing.JLabel();
@@ -56,30 +74,30 @@ public class EventsGUI extends javax.swing.JFrame {
         locationTF = new javax.swing.JTextPane();
         jScrollPane10 = new javax.swing.JScrollPane();
         attendingTF = new javax.swing.JTextPane();
-        reoccuringL = new javax.swing.JLabel();
+        onlineEventLBL = new javax.swing.JLabel();
         volunteeringEDL = new javax.swing.JLabel();
-        volunteeringCatagoryL = new javax.swing.JLabel();
+        volunteeringCatagoryLBL = new javax.swing.JLabel();
         jScrollPane12 = new javax.swing.JScrollPane();
         volunteeringEDTF = new javax.swing.JTextPane();
         jScrollPane13 = new javax.swing.JScrollPane();
         volunteeringCatagoryTF = new javax.swing.JTextPane();
-        fundraiserInfoBTN = new javax.swing.JLabel();
+        fundraiserInfoLBL = new javax.swing.JLabel();
         fundraiserCatagoryBTN = new javax.swing.JLabel();
-        volunteeringOnlineL = new javax.swing.JLabel();
-        volunteeringInfoL = new javax.swing.JLabel();
+        volunteeringReoccuringLBL = new javax.swing.JLabel();
+        volunteeringInfoLBL = new javax.swing.JLabel();
         createEventBTN = new javax.swing.JButton();
         searchBTN = new javax.swing.JButton();
         bookEventBTN = new javax.swing.JButton();
         homeBTN = new javax.swing.JButton();
-        reoccuringTrueBTN = new javax.swing.JRadioButton();
-        reoccuringFalseBTN = new javax.swing.JRadioButton();
+        onlineEventTrueBTN = new javax.swing.JRadioButton();
+        onlineEventFalseBTN = new javax.swing.JRadioButton();
         jScrollPane11 = new javax.swing.JScrollPane();
         fundraiserInfoTF = new javax.swing.JTextPane();
-        volunteeringOETrueBTN = new javax.swing.JRadioButton();
-        volunteeringOEFalseBTN = new javax.swing.JRadioButton();
+        volunteeringReoccuringTrueBTN = new javax.swing.JRadioButton();
+        volunteeringReoccuringFalseBTN = new javax.swing.JRadioButton();
         PrintTicketBTN = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        ResultsTP = new javax.swing.JTextPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         jRadioButton4.setText("jRadioButton4");
 
@@ -110,9 +128,13 @@ public class EventsGUI extends javax.swing.JFrame {
 
         attendingL.setText("ATTENDING");
 
+        EventType.add(fundraiserBTN);
         fundraiserBTN.setText("FUNDRAISER");
+        fundraiserBTN.addActionListener(this::fundraiserBTNActionPerformed);
 
+        EventType.add(volunteeringBTN);
         volunteeringBTN.setText("VOLUNTEERING");
+        volunteeringBTN.addActionListener(this::volunteeringBTNActionPerformed);
 
         eventTypeL.setText("EVENT TYPE");
 
@@ -124,23 +146,23 @@ public class EventsGUI extends javax.swing.JFrame {
 
         jScrollPane10.setViewportView(attendingTF);
 
-        reoccuringL.setText("Reoccuring?");
+        onlineEventLBL.setText("Online Event?");
 
         volunteeringEDL.setText("Event Duration");
 
-        volunteeringCatagoryL.setText("Catagory");
+        volunteeringCatagoryLBL.setText("Catagory");
 
         jScrollPane12.setViewportView(volunteeringEDTF);
 
         jScrollPane13.setViewportView(volunteeringCatagoryTF);
 
-        fundraiserInfoBTN.setText("FUNDRAISER INFORMATION");
+        fundraiserInfoLBL.setText("FUNDRAISER INFORMATION");
 
         fundraiserCatagoryBTN.setText("Catagory");
 
-        volunteeringOnlineL.setText("Online Event");
+        volunteeringReoccuringLBL.setText("Reoccuring");
 
-        volunteeringInfoL.setText("VOLUNTEERING INFORMATION");
+        volunteeringInfoLBL.setText("VOLUNTEERING INFORMATION");
 
         createEventBTN.setText("Create Event");
         createEventBTN.addActionListener(this::createEventBTNActionPerformed);
@@ -154,157 +176,162 @@ public class EventsGUI extends javax.swing.JFrame {
         homeBTN.setText("Back");
         homeBTN.addActionListener(this::homeBTNActionPerformed);
 
-        reoccuringTrueBTN.setText("Yes");
+        onlineEventTrueBTN.setText("Yes");
 
-        reoccuringFalseBTN.setText("Nah");
+        onlineEventFalseBTN.setText("Nah");
 
         jScrollPane11.setViewportView(fundraiserInfoTF);
 
-        volunteeringOETrueBTN.setText("Yes");
+        reoccuring.add(volunteeringReoccuringTrueBTN);
+        volunteeringReoccuringTrueBTN.setText("Yes");
 
-        volunteeringOEFalseBTN.setText("Nah");
+        reoccuring.add(volunteeringReoccuringFalseBTN);
+        volunteeringReoccuringFalseBTN.setText("Nah");
 
         PrintTicketBTN.setText("Print Ticket");
         PrintTicketBTN.addActionListener(this::PrintTicketBTNActionPerformed);
 
-        jScrollPane1.setViewportView(ResultsTP);
+        jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(createEventBTN)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(searchBTN)
-                        .addGap(18, 18, 18)
-                        .addComponent(bookEventBTN)
-                        .addGap(18, 18, 18)
-                        .addComponent(PrintTicketBTN)
-                        .addGap(18, 18, 18)
-                        .addComponent(homeBTN))
-                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(dateL)
-                                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                                .addComponent(jScrollPane7))
-                            .addComponent(locationL))
-                        .addGap(67, 67, 67)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fundraiserInfoLBL)
+                                    .addComponent(fundraiserCatagoryBTN)
+                                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(onlineEventLBL)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(onlineEventTrueBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(onlineEventFalseBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(volunteeringEDL)
+                                        .addComponent(jScrollPane13)
+                                        .addComponent(volunteeringCatagoryLBL)
+                                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(volunteeringInfoLBL)
+                                    .addComponent(volunteeringReoccuringLBL)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(volunteeringReoccuringTrueBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(volunteeringReoccuringFalseBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pageHeader)
+                                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(7, 7, 7)
+                                        .addComponent(createEventBTN)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(searchBTN)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(bookEventBTN)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(PrintTicketBTN)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(homeBTN))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(dateL)
+                                        .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                                        .addComponent(jScrollPane7))
+                                    .addComponent(nameL))
+                                .addGap(0, 36, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fundraiserCatagoryBTN)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(fundraiserInfoBTN)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(reoccuringTrueBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(reoccuringFalseBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(locationL)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(attendingL)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(59, 59, 59))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(198, 198, 198)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(volunteeringBTN)
                             .addComponent(eventTypeL)
                             .addComponent(fundraiserBTN))
-                        .addGap(67, 67, 67)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(volunteeringOnlineL)
-                                .addComponent(volunteeringEDL)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(volunteeringOETrueBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(volunteeringOEFalseBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
-                                .addComponent(volunteeringCatagoryL)
-                                .addComponent(jScrollPane12))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(23, 23, 23)
-                                .addComponent(volunteeringInfoL))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(nameL)
-                        .addGap(223, 223, 223)
-                        .addComponent(reoccuringL))
-                    .addComponent(pageHeader)
-                    .addComponent(volunteeringBTN))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(pageHeader)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(fundraiserInfoBTN)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameL)
-                    .addComponent(reoccuringL))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(pageHeader)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nameL)
+                            .addComponent(locationL))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(reoccuringTrueBTN)
-                                    .addComponent(reoccuringFalseBTN))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(fundraiserCatagoryBTN)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(dateL)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(locationL)
-                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(9, 9, 9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(attendingL)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(volunteeringInfoL)))
+                                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
+                        .addComponent(eventTypeL)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(fundraiserBTN)
+                        .addGap(0, 0, 0)
+                        .addComponent(volunteeringBTN)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(volunteeringOnlineL)
-                            .addComponent(eventTypeL))
+                            .addComponent(volunteeringInfoLBL)
+                            .addComponent(fundraiserInfoLBL))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(volunteeringOETrueBTN)
-                            .addComponent(volunteeringOEFalseBTN))
-                        .addGap(9, 9, 9))
+                            .addComponent(volunteeringCatagoryLBL)
+                            .addComponent(fundraiserCatagoryBTN))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(volunteeringEDL)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(onlineEventLBL)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(onlineEventTrueBTN)
+                                    .addComponent(onlineEventFalseBTN))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(volunteeringReoccuringLBL)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(volunteeringReoccuringTrueBTN)
+                            .addComponent(volunteeringReoccuringFalseBTN))
+                        .addGap(111, 111, 111))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(fundraiserBTN)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(volunteeringBTN)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(volunteeringCatagoryL)
-                .addGap(0, 0, 0)
-                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(volunteeringEDL)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
+                        .addComponent(jScrollPane1)
+                        .addGap(1, 1, 1)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(searchBTN)
                     .addComponent(bookEventBTN)
@@ -312,7 +339,6 @@ public class EventsGUI extends javax.swing.JFrame {
                     .addComponent(PrintTicketBTN)
                     .addComponent(homeBTN))
                 .addContainerGap())
-            .addComponent(jScrollPane1)
         );
 
         pack();
@@ -325,21 +351,56 @@ public class EventsGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_homeBTNActionPerformed
 // Event Data Retriever
     private void createEventBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createEventBTNActionPerformed
-        // TODO add your handling code here:
-        // Using the Events file, all text fields are added to the 
+        // Create Event Function
     }//GEN-LAST:event_createEventBTNActionPerformed
 
     private void PrintTicketBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrintTicketBTNActionPerformed
-        // TODO add your handling code here:
+        // Print Ticket Function
     }//GEN-LAST:event_PrintTicketBTNActionPerformed
 
     private void searchBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBTNActionPerformed
-        // TODO add your handling code here:
+        // Search Event Function
     }//GEN-LAST:event_searchBTNActionPerformed
 
     private void bookEventBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookEventBTNActionPerformed
-        // TODO add your handling code here:
+        // Book Event Function
     }//GEN-LAST:event_bookEventBTNActionPerformed
+
+    private void fundraiserBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fundraiserBTNActionPerformed
+        fundraiserInfoLBL.setVisible(true);
+        onlineEventLBL.setVisible(true);
+        onlineEventTrueBTN.setVisible(true);
+        onlineEventFalseBTN.setVisible(true);
+        fundraiserCatagoryBTN.setVisible(true);
+        fundraiserInfoTF.setVisible(true);
+        
+        volunteeringInfoLBL.setVisible(false);
+        volunteeringReoccuringLBL.setVisible(false);
+        volunteeringReoccuringTrueBTN.setVisible(false);
+        volunteeringReoccuringFalseBTN.setVisible(false);
+        volunteeringCatagoryLBL.setVisible(false);
+        volunteeringCatagoryTF.setVisible(false);
+        volunteeringEDL.setVisible(false);
+        volunteeringEDTF.setVisible(false);
+    }//GEN-LAST:event_fundraiserBTNActionPerformed
+
+    private void volunteeringBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volunteeringBTNActionPerformed
+        fundraiserInfoLBL.setVisible(false);
+        onlineEventLBL.setVisible(false);
+        onlineEventTrueBTN.setVisible(false);
+        onlineEventFalseBTN.setVisible(false);
+        fundraiserCatagoryBTN.setVisible(false);
+        fundraiserInfoTF.setVisible(false);
+        
+        volunteeringInfoLBL.setVisible(true);
+        volunteeringReoccuringLBL.setVisible(true);
+        volunteeringReoccuringTrueBTN.setVisible(true);
+        volunteeringReoccuringFalseBTN.setVisible(true);
+        volunteeringCatagoryLBL.setVisible(true);
+        volunteeringCatagoryTF.setVisible(true);
+        volunteeringEDL.setVisible(true);
+        volunteeringEDTF.setVisible(true);
+    }//GEN-LAST:event_volunteeringBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -366,8 +427,9 @@ public class EventsGUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new EventsGUI().setVisible(true));
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup EventType;
+    private javax.swing.ButtonGroup OnlineEvent;
     private javax.swing.JButton PrintTicketBTN;
-    private javax.swing.JTextPane ResultsTP;
     private javax.swing.JLabel attendingL;
     private javax.swing.JTextPane attendingTF;
     private javax.swing.JButton bookEventBTN;
@@ -377,7 +439,7 @@ public class EventsGUI extends javax.swing.JFrame {
     private javax.swing.JLabel eventTypeL;
     private javax.swing.JRadioButton fundraiserBTN;
     private javax.swing.JLabel fundraiserCatagoryBTN;
-    private javax.swing.JLabel fundraiserInfoBTN;
+    private javax.swing.JLabel fundraiserInfoLBL;
     private javax.swing.JTextPane fundraiserInfoTF;
     private javax.swing.JButton homeBTN;
     private javax.swing.JLabel jLabel12;
@@ -397,6 +459,7 @@ public class EventsGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane10;
     private javax.swing.JTextPane jTextPane11;
     private javax.swing.JTextPane jTextPane12;
@@ -404,19 +467,20 @@ public class EventsGUI extends javax.swing.JFrame {
     private javax.swing.JTextPane locationTF;
     private javax.swing.JLabel nameL;
     private javax.swing.JTextPane nameTF;
+    private javax.swing.JRadioButton onlineEventFalseBTN;
+    private javax.swing.JLabel onlineEventLBL;
+    private javax.swing.JRadioButton onlineEventTrueBTN;
     private javax.swing.JLabel pageHeader;
-    private javax.swing.JRadioButton reoccuringFalseBTN;
-    private javax.swing.JLabel reoccuringL;
-    private javax.swing.JRadioButton reoccuringTrueBTN;
+    private javax.swing.ButtonGroup reoccuring;
     private javax.swing.JButton searchBTN;
     private javax.swing.JRadioButton volunteeringBTN;
-    private javax.swing.JLabel volunteeringCatagoryL;
+    private javax.swing.JLabel volunteeringCatagoryLBL;
     private javax.swing.JTextPane volunteeringCatagoryTF;
     private javax.swing.JLabel volunteeringEDL;
     private javax.swing.JTextPane volunteeringEDTF;
-    private javax.swing.JLabel volunteeringInfoL;
-    private javax.swing.JRadioButton volunteeringOEFalseBTN;
-    private javax.swing.JRadioButton volunteeringOETrueBTN;
-    private javax.swing.JLabel volunteeringOnlineL;
+    private javax.swing.JLabel volunteeringInfoLBL;
+    private javax.swing.JRadioButton volunteeringReoccuringFalseBTN;
+    private javax.swing.JLabel volunteeringReoccuringLBL;
+    private javax.swing.JRadioButton volunteeringReoccuringTrueBTN;
     // End of variables declaration//GEN-END:variables
 }
